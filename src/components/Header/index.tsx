@@ -2,7 +2,7 @@ import {Component} from 'solid-js';
 
 interface HeaderProps {
   theme: string;
-  changeTheme: () => void;
+  toggleTheme: () => void;
 };
 
 import Profile from '@components/Profile';
@@ -20,7 +20,7 @@ const Header : Component<HeaderProps> = (props:HeaderProps) => {
       <div class="flex items-center text-text-light dark:text-text-dark">(88) 9 9630-2439</div>
     </div>
     <div class="flex">
-      <ThemeToggle theme={props.theme} onClick={props.changeTheme}/>
+      <ThemeToggle theme={props.theme} onClick={props.toggleTheme}/>
       <Profile/>
     </div>
   </div>;
