@@ -6,7 +6,7 @@ interface ResumeProps {
 
 const Resume: Component<ResumeProps> = (props) => {
   return <div class="bg-background-light dark:bg-background-dark ">
-    <div class="items-center justify-center h-full w-[1000px] m-auto">
+    <div class="items-center justify-center h-full w-full lg:w-[1000px] m-auto">
       {props.children}
     </div>
   </div>; ;

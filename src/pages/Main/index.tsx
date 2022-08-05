@@ -1,6 +1,5 @@
 import {Component, createSignal} from 'solid-js';
 
-import MobileWarning from '@components/MobileWarning';
 import Resume from 'layouts/Resume';
 import Content from '@components/Content';
 import Header from '@components/Header';
@@ -30,20 +29,17 @@ const Main: Component = () => {
 
   loadTheme();
 
-  if (screen.width < 990) {
-    return <MobileWarning />;
-  }
-
   return <div class={`${theme()} w-screen`}>
     <Resume>
       <Header toggleTheme={toggleTheme} theme={theme()} />
       <Separator />
       <Content>
-        <div class="w-[620px] flex flex-col gap-[12px]">
+        <div class="lg:w-[620px] w-full flex flex-col gap-[12px]">
           <Intro />
           <Education />
           <WorkExperience />
         </div>
+        <div class="lg:hidden h-[10px]"></div>
         <div class="flex flex-col gap-[10px]">
           <Panel data={skills} title="Skills" />
           <Panel data={tools} title="Tools" />

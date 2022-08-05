@@ -14,8 +14,8 @@ const Header : Component<HeaderProps> = (props:HeaderProps) => {
     window.open('mailto:junior.nascm@gmail.com', '_blank');
   }
 
-  return <div class="flex w-full justify-between p-[20px]">
-    <div class="flex gap-[10px] items-center">
+  return <div class="flex justify-between p-[20px] lg:w-full">
+    <div class="gap-[10px] items-center hidden lg:visible lg:flex">
       <Button text="Contact-me" default onClick={sendMail}/>
       <div class="flex items-center text-text-light dark:text-text-dark">(88) 9 9630-2439</div>
     </div>
