@@ -34,6 +34,17 @@ const Main: Component = () => {
     localStorage.setItem('theme', theme());
   };
 
+  console.log(screen.width);
+  if (screen.width < 990) {
+    return <div class="flex items-center justify-center h-screen">
+      <div class="text-center">
+  Sorry, but this site is not optimized for mobile devices. Please, use a desktop computer.
+        <br/>
+      Mobile version Comming really soon :)
+      </div>
+    </div>;
+  }
+
   return <div class={`${theme()} w-screen`}>
     <div class="bg-background-light dark:bg-background-dark ">
       <div class="items-center justify-center h-full w-[1000px] m-auto">
