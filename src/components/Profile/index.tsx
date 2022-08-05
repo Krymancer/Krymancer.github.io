@@ -1,6 +1,6 @@
 import {Component} from 'solid-js';
 
-const profileImageUrl = 'src/assets/images/profile.png';
+import profileImageUrl from 'src/assets/images/profile.png';
 
 const Profile: Component = () => {
   return <div class="flex items-center gap-[10px] p-2">
