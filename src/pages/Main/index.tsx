@@ -1,4 +1,4 @@
-import {Component, createSignal} from 'solid-js';
+import {Component, createSignal, createEffect} from 'solid-js';
 
 import Resume from 'layouts/Resume';
 import Content from '@components/Content';
@@ -27,7 +27,7 @@ const Main: Component = () => {
     themeManager.saveTheme(theme());
   }
 
-  loadTheme();
+  createEffect(loadTheme);
 
   return <div class={`${theme()} w-screen`}>
     <Resume>
