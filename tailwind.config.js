@@ -38,8 +38,8 @@ module.exports = {
           hover: '#036C96',
         },
         purple: {
-          default: '#7287FD',
-          hover: '#8839EF',
+          default: '#cba6f7',
+          hover: '#9b6cd0',
         },
         border: {
           light: '#BCC0CC',

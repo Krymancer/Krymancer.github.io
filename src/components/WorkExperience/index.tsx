@@ -14,7 +14,7 @@ const WorkExperience: Component = () => {
             title={title}
             company={company}
             location={location}
-            descripton={description}
+            description={description}
             startDate={startDate}
             endDate={endDate} />
         )}

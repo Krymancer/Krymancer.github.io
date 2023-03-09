@@ -1,4 +1,5 @@
 import {Component} from 'solid-js';
+import {VsCircleSmallFilled} from 'solid-icons/vs';
 
 interface HeaderProps {
   theme: string;
@@ -7,19 +8,19 @@ interface HeaderProps {
 
 import Profile from '@components/Profile';
 import ThemeToggle from '@components/ThemeToggle';
-import Button from '@components/Button';
 
 const Header : Component<HeaderProps> = (props:HeaderProps) => {
-  function sendMail() {
-    window.open('mailto:junior.nascm@gmail.com', '_blank');
-  }
-
-  return <div class="flex justify-between p-[20px] lg:w-full">
-    <div class="gap-[10px] items-center hidden lg:visible lg:flex">
-      <Button text="Contact-me" default onClick={sendMail}/>
-      <div class="flex items-center text-text-light dark:text-text-dark">(88) 9 9630-2439</div>
+  return <div class="flex justify-between p-5 pt-1 pb-1 lg:w-full">
+    <div class="gap-5 items-center hidden lg:visible lg:flex">
+      <div class="flex items-center text-text-light dark:text-text-dark">
+      (88) 9 9630-2439
+        <VsCircleSmallFilled/>
+        <a href="mailto:junior.nascm@gmail.com" class="underline">
+        junior.nascm@gmail.com
+        </a>
+      </div>
     </div>
-    <div class="flex">
+    <div class="flex gap-1">
       <ThemeToggle theme={props.theme} onClick={props.toggleTheme}/>
       <Profile/>
     </div>

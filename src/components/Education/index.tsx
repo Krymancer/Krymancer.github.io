@@ -14,7 +14,7 @@ const Education: Component = () => {
             title={title}
             company={institution}
             location={location}
-            descripton={description}
+            description={description}
             startDate={startDate}
             endDate={endDate} />
         )}

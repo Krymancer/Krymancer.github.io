@@ -10,10 +10,10 @@ const Intro : Component = () => {
   function openLinkedin() {
     window.open('https://linkedin.com/in/junior-nascm', '_blank');
   };
-  return <div class="flex flex-col">
-    <div class="text-[32px] text-text-light dark:text-text-dark">Hi, I'm Júnior!</div>
-    <div class="mb-[10px] text-text-light dark:text-text-dark">A programmer & engineer from Sobral, CE. Passionate about artificial intelligence and science.</div>
-    <div class="flex gap-[10px]">
+  return <div class="flex flex-col pb-3">
+    <div class="text-4xl text-text-light dark:text-text-dark">Hi, I'm Júnior!</div>
+    <div class="mb-5 mt-3 text-text-light dark:text-text-dark">Passionate developer fascinated by science and technology, combining both to create innovative solutions that positively impact the world. Experienced in programming and up-to-date with latest advancements in science and technology. Constantly pushing boundaries, exploring new ideas and opportunities. Excited about the future and eager to be part of upcoming advancements.</div>
+    <div class="flex gap-5">
       <Button github text="Github" onClick={openGithub}/>
       <Button linkedin text="Linkedin" onClick={openLinkedin} />
     </div>
