@@ -13,7 +13,7 @@ interface ItemProps {
 
 const Item : Component<ItemProps> = (props: ItemProps) => {
   return <div class="pb-5">
-    <div class="text-xl font-bold text-text-light dark:text-text-dark">{`${props.title} - ${props.title}`}</div>
+    <div class="text-xl font-bold text-text-light dark:text-text-dark">{`${props.title}`}</div>
     <div class="flex flex-col text-md font-thin text-lightText-light dark:text-lightText-dark">
       <span>{props.company}</span>
       <div class="flex flex-row gap-2">

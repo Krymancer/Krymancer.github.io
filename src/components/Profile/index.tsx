@@ -8,7 +8,7 @@ const Profile: Component = () => {
       <div class="text-text-light dark:text-text-dark font-bold leading-[14px]" >Júnior Nascimento, 22</div>
       <div class="text-text-light dark:text-text-dark leading-[14px] self-end">FullStack Developer</div>
     </div>
-    <img class="w-[50px] h-[50px] bg-background-dark dark:bg-background-light rounded-full" src={profileImageUrl} alt="Profile" />
+    <img class="w-[50px] h-[50px] rounded-full" src={profileImageUrl} alt="Profile" />
   </div>;
 };
 
