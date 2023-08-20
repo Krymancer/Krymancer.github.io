@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: 'Cascadia Code', sans-serif;
-}
 
-body { 
-  overflow-x: hidden;
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark
+  }
 }

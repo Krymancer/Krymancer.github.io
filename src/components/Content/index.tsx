@@ -5,7 +5,7 @@ interface ContentProps {
 }
 
 const Content: Component<ContentProps> = (props) => {
-  return <div class="my-5 px-5 flex flex-col justify-between lg:flex-row ">
+  return <div class="my-5 px-5 flex flex-col justify-between lg:flex-row gap-10">
     {props.children}
   </div>;
 };

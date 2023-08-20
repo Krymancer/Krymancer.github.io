@@ -5,8 +5,8 @@ interface ResumeProps {
 }
 
 const Resume: Component<ResumeProps> = (props) => {
-  return <div class="bg-background-light dark:bg-background-dark ">
-    <div class="items-center justify-center h-full w-full lg:w-[1000px] m-auto">
+  return <div class="h-full w-full lg:w-[1000px] mx-auto overflow-x-hidden">
+    <div class="flex flex-col items-center justify-center">
       {props.children}
     </div>
   </div>; ;

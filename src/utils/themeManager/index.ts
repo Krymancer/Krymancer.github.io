@@ -10,7 +10,14 @@ function saveTheme(theme: string) {
   localStorage.setItem('theme', theme);
 }
 
+function toggleTheme() {
+  const theme = getTheme();
+  saveTheme(theme === 'dark' ? 'light' : 'dark');
+  document.documentElement.classList.toggle('dark');
+}
+
 export default {
   getTheme,
   saveTheme,
+  toggleTheme,
 };
